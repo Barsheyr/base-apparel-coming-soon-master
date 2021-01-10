@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.base-apparel {
+    display: flex;
+    background-image: url(images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: -10%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.logo {
+    margin: 1% 0 30% 0;
+}
+
+.first {
+    padding: 5% 10% 10%;
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: left;
+    color: hsl(0, 6%, 24%);
+    padding: 1% 60% 1% 0;
+    line-height: 1.2em;
+    letter-spacing: 10px;
+    margin-top: -25%;
+}
+
+span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+p {
+    color: hsl(0, 36%, 70%);
+    margin-top: 20px;
+    line-height: 1.5em;
+    padding: 1% 60% 1% 0;
+}
+
+.form {
+    display: flex;
+    margin-top: 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid hsl(0, 36%, 70%);
+    border-radius: 20px;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px 80px;
+    background-color: transparent;
+}
+
+.xclam {
+    top: 90%;
+    visibility: visible;
+}
+
+.form-control.error.xclam {
+    visibility: visible;
+}
+
+.form-control.success input {
+    border-color: green;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control small {
+    margin-left: 20px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
+
+button {
+    border: 1px solid hsl(0, 93%, 68%);
+    background-color: hsl(0, 93%, 68%);
+    padding: 13px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: -50px;
+}
+
+button:hover {
+    background-color: hsl(0, 36%, 70%);
+    border: 1px solid hsl(0, 36%, 70%);
+}
+
+@media only screen and (max-width: 767px) {
+    .base-apparel {
+        flex-direction: column-reverse;
+        background-image: url(images/hero-mobile.jpg);
+        background-position: 40% 15%;
+        background-size: contain;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 100%;
+        padding: 0;
+    }
+    p {
+        text-align: center;
+        padding: 0;
+    }
+}
